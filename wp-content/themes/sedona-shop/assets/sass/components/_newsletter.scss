@@ -1,0 +1,83 @@
+/*-------------------------------------------------------*/
+/* Newsletter
+/*-------------------------------------------------------*/
+.newsletter {
+	margin-bottom: 1.5rem;
+}
+
+.mc4wp-form-fields {
+	position: relative;
+
+	input[type="email"],
+	input[type="text"] {
+		height: 60px;
+		font-size: 0.875rem;
+		margin-bottom: 0;
+	}
+
+	.newsletter__submit {
+		position: absolute;
+		right: 20px;
+		top: 16px;
+	}
+
+	[type="submit"] {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0;
+		width: 24px;
+		height: 24px;
+		padding: 0;
+		border: 0;
+		background-color: var(--deo-background-color--light);
+		transition: color 0.2s var(--deo-transition),
+			background-color 0.2s var(--deo-transition);
+
+		&:hover,
+		&:focus {
+			background-color: var(--deo-primary-color);
+		}
+	}
+}
+
+.mc4wp-form .mc4wp-form-fields input[type="submit"]:hover,
+.mc4wp-form .mc4wp-form-fields input[type="submit"]:focus {
+	background-color: var(--deo-background-color--dark);
+}
+
+.newsletter {
+	flex: 1;
+
+	&__title {
+		font-size: 2.3125rem;
+		margin-bottom: 16px;
+	}
+
+	&__text {
+		color: var(--deo-text-color--light);
+	}
+
+	&__submit input {
+		color: var(--deo-heading-color);
+	}
+
+	.form-group {
+		flex-wrap: wrap;
+		flex: 1 0 0;
+
+		input {
+			margin-bottom: 0;
+		}
+
+		&.eversor-field-type-input {
+			flex-basis: 100%;
+		}
+	}
+}
+
+.footer__widget-newsletter-title {
+	@include bp-lg-up {
+		padding-right: 10%;
+	}
+}

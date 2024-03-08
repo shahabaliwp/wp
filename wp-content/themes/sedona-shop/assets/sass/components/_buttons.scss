@@ -1,0 +1,149 @@
+/*-------------------------------------------------------*/
+/* Buttons
+/*-------------------------------------------------------*/
+.btn {
+	position: relative;
+	backface-visibility: hidden;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	user-select: none;
+
+	&:hover {
+		color: var(--deo-buttons-hover-text-color);
+		border-color: transparent;
+	}
+
+	&:focus {
+		outline: none;
+		color: var(--deo-buttons-hover-text-color);
+	}
+
+	&.btn--lg {
+		font-size: var(--deo-btn-lg-size);
+		padding: 17px 38px;
+
+		svg {
+			width: 20px;
+		}
+	}
+
+	&.btn--md {
+		font-size: var(--deo-btn-md-size);
+		padding: 13px 28px;
+	}
+
+	&.btn--sm {
+		font-size: var(--deo-btn-sm-size);
+		padding: 9px 24px;
+	}
+
+	&--color {
+		background-color: var(--deo-primary-color);
+	}
+
+	&--wide {
+		width: 100% !important;
+	}
+}
+
+/* Input Buttons
+-------------------------------------------------------*/
+.btn--button {
+	border: none;
+	margin-bottom: 0;
+	width: auto;
+
+	&:hover,
+	&:focus {
+		background-color: var(--deo-heading-color);
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.wp-element-button,
+.wp-block-button__link,
+a.elementor-button,
+.btn,
+.button {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	white-space: normal;
+	height: auto;
+	font-weight: 600;
+	font-family: var(--deo-heading-font);
+	background-color: var(--deo-primary-color);
+	text-align: center;
+	border-color: transparent;
+	border-radius: 999px;
+	transition: var(--deo-transition--all);
+	color: #000;
+	padding: 10px 40px;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		background-color: var(--deo-heading-color);
+		color: var(--deo-buttons-hover-text-color);
+		border-color: transparent;
+	}
+}
+
+/* Modal close button
+-------------------------------------------------------*/
+.sedona-shop-close-button {
+	padding: 0;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 9px solid transparent;
+	width: 20px;
+	height: 20px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	&--align-top-right {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		margin-top: -1px;
+		background-color: #fff;
+		transform-origin: 50% 50%;
+		opacity: 1;
+		transition: transform ease 0.25s;
+	}
+
+	&--dark::before,
+	&--dark::after {
+		background-color: #000;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover::after,
+	&:hover::before {
+		transform: rotate(0);
+	}
+}

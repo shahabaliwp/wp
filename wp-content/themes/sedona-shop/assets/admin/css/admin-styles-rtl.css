@@ -1,0 +1,285 @@
+/* Variables */
+:root {
+	--sedona-shop-gray-0: #f6f7f7;
+	--sedona-shop-gray-2: #f0f0f1;
+	--sedona-shop-gray-5: #dcdcde;
+	--sedona-shop-gray-20: #a7aaad;
+	--sedona-shop-gray-50: #646970;
+	--sedona-shop-gray-80: #2c3338;
+	--sedona-shop-blue-60: #135e96;
+	--sedona-shop-green-30: #00ba37;
+	--sedona-shop-red-50: #d63638;
+}
+
+/* Admin Styles
+-------------------------------------------------------*/
+.appearance_page_sedona-theme #wpcontent,
+.toplevel_page_sedona #wpcontent {
+	padding: 0;
+}
+
+.sedona-shop-page-header {
+	padding: 10px 20px;
+	height: 50px;
+	background-color: #fff;
+}
+
+.sedona-shop-page-header__container {
+	margin: 0 auto;
+	height: 100%;
+	max-width: 1140px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sedona-shop-page-header__branding {
+	display: flex;
+	align-items: center;
+}
+
+.sedona-shop-page-header__logo {
+	max-width: 110px;
+}
+
+.sedona-shop-theme-version {
+	background-color: #edf0f0;
+	padding: 3px 5px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.sedona-shop-page-header__tagline-text a {
+	text-decoration: none;
+}
+
+/* Content */
+.sedona-shop-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+
+.sedona-shop-grid-content {
+	margin-bottom: 24px;
+}
+
+.sedona-shop-grid-content,
+.sedona-shop-grid-sidebar {
+	flex: 1 0 0%;
+	max-width: 100%;
+	padding: 0 12px;
+}
+
+@media screen and (min-width: 783px) {
+	.sedona-shop-grid-sidebar {
+		max-width: 25%;
+		flex: 0 0 25%;
+		padding: 0 12px;
+	}
+}
+
+.sedona-shop-widget {
+	background-color: #fff;
+	padding: 24px;
+	margin-bottom: 24px;
+}
+
+.sedona-shop-widget-title {
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.sedona-shop-visedona-shop-tutorials__item {
+	margin-bottom: 16px;
+}
+
+.sedona-shop-visedona-shop-tutorials__url {
+	display: block;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: ease-in-out box-shadow 0.2s;
+}
+
+.sedona-shop-visedona-shop-tutorials__url:hover {
+	box-shadow: -2px 6px 16px var(--sedona-shop-gray-5);
+}
+
+.sedona-shop-visedona-shop-tutorials__url:hover::after {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sedona-shop-visedona-shop-tutorials__url::after {
+	display: block;
+	content: "";
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.2);
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	transition: ease-in-out background-color 0.2s;
+}
+
+.sedona-shop-visedona-shop-tutorials__img {
+	width: 100%;
+	display: block;
+}
+
+.sedona-shop-visedona-shop-tutorials__label {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	right: 50%;
+	white-space: nowrap;
+	transform: translate(50%, -50%);
+	background-color: #fff;
+	color: var(--sedona-shop-gray-80);
+	padding: 8px 12px;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.sedona-shop-widget-visedona-shop-tutorials__more-videos {
+	margin-top: 24px;
+	text-align: center;
+}
+
+/* Container
+-------------------------------------------------------*/
+.sedona-shop-container {
+	max-width: 1140px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 25px auto 20px;
+}
+
+.sedona-shop-container .sedona-shop-title {
+	font-size: 1.5rem;
+	line-height: 1.2;
+	padding: 0;
+}
+
+.sedona-shop-body {
+	background-color: #fff;
+	padding: 40px;
+}
+
+.sedona-shop-body ol {
+	font-size: 0.9375rem;
+}
+
+.sedona-shop-body iframe {
+	max-width: 100%;
+	margin-top: 16px;
+}
+
+.sedona-shop-body h3 {
+	margin-top: 1.5em;
+}
+
+.sedona-shop-intro-text {
+	font-size: 1.1875rem;
+}
+
+.sedona-shop-list {
+	line-height: 1.5;
+}
+
+/* Buttons
+-------------------------------------------------------*/
+.sedona-shop-navigation-buttons {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+
+.sedona-shop-navigation-buttons__item {
+	margin: 0;
+}
+
+.sedona-shop-navigation-buttons__url {
+	display: flex;
+	padding: 12px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid var(--sedona-shop-gray-5);
+	text-decoration: none;
+	transition: ease-in-out box-shadow 0.2s;
+}
+
+.sedona-shop-navigation-buttons__url:hover {
+	box-shadow: -2px 6px 16px var(--sedona-shop-gray-5);
+}
+
+.sedona-shop-navigation-buttons__icon {
+	display: inline-block;
+	margin-left: 8px;
+	color: var(--sedona-shop-gray-50);
+}
+
+/* Useful Links
+-------------------------------------------------------*/
+.sedona-shop-useful-links {
+	margin: 0;
+}
+
+.sedona-shop-useful-links a {
+	text-decoration: none;
+}
+
+.sedona-shop-addon-list-item {
+	-js-display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	justify-content: space-between;
+	padding: 12px 0;
+	margin-bottom: 0;
+	border-top: 1px solid #e6e6e6;
+}
+
+.sedona-shop-addon-list-item-icon {
+	color: var(--sedona-shop-green-30);
+	margin-right: -6px;
+	margin-left: 3px;
+}
+
+/* Notification
+-------------------------------------------------------*/
+.sedona-shop-notification {
+	margin: 20px 0 28px;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+/* Disable kirki promotion
+-------------------------------------------------------*/
+.kirki-settings-panel > div,
+.kirki-recommended-plugins-panel {
+	display: none !important;
+}
+
+.kirki-settings-panel .kirki-clear-font-cache-metabox {
+	display: block !important;
+}

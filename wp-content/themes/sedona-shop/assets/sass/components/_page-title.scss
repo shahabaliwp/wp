@@ -1,0 +1,51 @@
+/*-------------------------------------------------------*/
+/* Page Title
+/*-------------------------------------------------------*/
+.page-title {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	padding: 60px 0;
+	background-size: cover;
+	@include background-img-cover;
+	background-color: var(--deo-background-color--dark);
+
+	&__holder {
+		max-width: 878px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	&__title {
+		line-height: 1.2;
+		margin-bottom: 0;
+		color: #fff;
+
+		@include bp-md-down {
+			font-size: 36px;
+		}
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		color: #fff;
+		margin-bottom: 0;
+		margin-top: 8px;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	@include bp-lg-up {
+		&--tall {
+			padding: 300px 0;
+		}
+	}
+
+	&--short {
+		padding: 100px 0;
+	}
+}

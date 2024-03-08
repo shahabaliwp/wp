@@ -1,0 +1,112 @@
+/*-------------------------------------------------------*/
+/* Helper classes
+/*-------------------------------------------------------*/
+.clear {
+	clear: both;
+}
+.oh {
+	overflow: hidden;
+}
+.relative {
+	position: relative;
+}
+
+/* Hover Scale
+-------------------------------------------------------*/
+.hover-scale {
+	overflow: hidden;
+}
+
+.hover-scale img {
+	transition: var(--deo-transition--all);
+}
+
+.hover-scale:hover img {
+	transform: scale(1.05);
+}
+
+// Underline effect
+.hover-underline a {
+	display: inline;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(
+		transparent calc(100% - 1px),
+		currentColor 1px
+	);
+	transition: 0.32s var(--deo-transition);
+	background-size: 0 95%;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		background-size: 100% 95%;
+	}
+}
+
+/* Gradients / Overlays
+-------------------------------------------------------*/
+.bg-gradient:before {
+	content: "";
+	top: 0;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	background: linear-gradient(to top, #b939e5 0%, #4c86e7 100%);
+}
+
+.bg-overlay::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.36);
+}
+
+.bg-overlay--dark::before {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Flexbox
+-------------------------------------------------------*/
+.justify-content-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.justify-content-between {
+	-webkit-box-pack: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.align-items-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+/* Display
+-------------------------------------------------------*/
+.d-none {
+	display: none !important;
+}
+
+@include bp-lg-up {
+	.d-lg-block {
+		display: block !important;
+	}
+
+	.d-lg-flex {
+		display: flex !important;
+	}
+
+	.d-lg-none {
+		display: none !important;
+	}
+}

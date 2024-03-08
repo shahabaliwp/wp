@@ -1,0 +1,103 @@
+/*-------------------------------------------------------*/
+/* Table of Content
+
+1. General
+2. Typography
+3. Grid
+4. Layout
+5. Navigation
+6. Footer
+7. Responsive
+8. Spacings
+9. Helper Classes
+
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/* Bootstrap Grid
+/*-------------------------------------------------------*/
+@import "_bootstrap.scss";
+
+/*-------------------------------------------------------*/
+/* General
+/*-------------------------------------------------------*/
+
+html {
+	font-size: 100%;
+}
+
+.clearfix {
+	zoom: 1;
+
+	&:before,
+	&:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+::-moz-selection {
+	background-color: #fdf0b2;
+}
+
+::-webkit-selection {
+	background-color: #fdf0b2;
+}
+
+::selection {
+	background-color: #fdf0b2;
+}
+
+:focus {
+	outline: none;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	img {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		user-select: none;
+	}
+}
+
+a {
+	transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+		border-color 0.1s ease-in-out;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		color: var(--deo-heading-color);
+	}
+}
+
+video {
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-size: 0.8125rem;
+	margin-top: 16px;
+	color: var(--deo-text-color--light);
+	text-align: center;
+}
+
+hr {
+	margin: 0;
+	border-color: var(--deo-border-color);
+}

@@ -1,0 +1,42 @@
+$primary: #ffb31a;
+
+:root {
+	--deo-nav-links-color: #1b1b1b;
+	--deo-post-link-color: #2f95ef;
+	--deo-primary-color: #{$primary};
+	--deo-secondary-color: #2f95ef;
+	@include defineColorHSL(--deo-primary-color, 40, 100%, 55%);
+	--deo-primary-rgb: #{hexToRGB($primary)};
+	--deo-primary-color--light: #f5ebe1;
+	--deo-border-color: #e5e5e5;
+	--deo-border-color--dark: #2b2b2b;
+	--deo-background-color--light: #f9f9f9;
+	--deo-background-color--dark: #181818;
+	--deo-woo-color-highlight: #26bb44;
+	--deo-heading-color: #222222;
+	--deo-text-color: #868686;
+	--deo-text-color--light: #9e9e9e;
+	--deo-buttons-hover-background-color: #222222;
+	--deo-buttons-hover-text-color: #ffffff;
+	--deo-heading-font-weigth: 600;
+	--deo-nav-height: 90px;
+	--deo-body-font: "Source Sans Pro", sans-serif;
+	--deo-heading-font: "Poppins", sans-serif;
+	--deo-container-width--narrow: 840px;
+	--deo-container-width: 1170px;
+	--deo-container-width--wide: 1280px;
+	--deo-border-radius: 8px;
+	--deo-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--deo-transition--all: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--deo-post-text-font-size: 1.25rem;
+	--deo-btn-xl-size: 1.125rem;
+	--deo-btn-lg-size: 1rem;
+	--deo-btn-md-size: 0.875rem;
+	--deo-btn-sm-size: 0.75rem;
+	--deo-h1-size: 2.5rem;
+	--deo-h2-size: 2.125rem;
+	--deo-h3-size: 1.75rem;
+	--deo-h4-size: 1.5rem;
+	--deo-h5-size: 1.25rem;
+	--deo-h6-size: 1.125rem;
+}

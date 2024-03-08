@@ -1,0 +1,48 @@
+/* Buttons
+-------------------------------------------------------*/
+.wp-block-button .wp-block-button__link {
+  padding: 19px 48px;
+  font-size: 1rem;
+  border-radius: var(--deo-border-radius);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none !important;
+  line-height: 1.1 !important;
+  font-family: var(--deo-heading-font);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.editor-styles-wrapper .wp-block-button__link,
+.editor-styles-wrapper .wp-block-button__link:active,
+.editor-styles-wrapper .wp-block-button__link:focus,
+.editor-styles-wrapper .wp-block-button__link:hover,
+.editor-styles-wrapper .wp-block-button__link:visited {
+  background-color: var(--deo-primary-color);
+}
+
+.wp-block-button__link:not(.has-white-background-color):active,
+.wp-block-button__link:not(.has-white-background-color):focus,
+.wp-block-button__link:not(.has-white-background-color):hover {
+  border-color: transparent;
+  background-color: var(--deo-buttons-hover-background-color);
+  color: var(--deo-buttons-hover-text-color);
+}
+
+.wp-block-button.hover-underline .wp-block-button__link:hover,
+.wp-block-button.hover-underline .wp-block-button__link:focus {
+  color: inherit !important;
+}
+
+/* Font Sizes
+-------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+  .has-4-x-large-font-size,
+  .has-3-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+  .has-2-x-large-font-size,
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+}

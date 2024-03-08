@@ -1,0 +1,133 @@
+/*-------------------------------------------------------*/
+/* Typography
+/*-------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--deo-heading-font);
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: var(--deo-heading-color);
+	font-weight: var(--deo-heading-font-weigth);
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+h1,
+.h1 {
+	font-size: var(--deo-h1-size);
+}
+h2,
+.h2 {
+	font-size: var(--deo-h2-size);
+}
+h3,
+.h3 {
+	font-size: var(--deo-h3-size);
+}
+h4,
+.h4 {
+	font-size: var(--deo-h4-size);
+}
+h5,
+.h5 {
+	font-size: var(--deo-h5-size);
+}
+h6,
+.h6 {
+	font-size: var(--deo-h6-size);
+}
+
+@include bp-md-down {
+	h1,
+	.h1,
+	.entry__article > h1 {
+		font-size: 2.125rem;
+	}
+	h2,
+	.h2,
+	.entry__article > h2 {
+		font-size: 1.75rem;
+	}
+	h3,
+	.h3,
+	.entry__article > h3 {
+		font-size: 1.625rem;
+	}
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+	color: inherit;
+
+	&:hover,
+	&:focus {
+		color: var(--deo-primary-color);
+	}
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+	color: var(--deo-heading-color);
+	font-size: 85%;
+}
+
+.elementor-widget-heading .elementor-heading-title {
+	line-height: normal;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+@include bp-xl-down {
+	.text-lg-center {
+		text-align: center;
+	}
+}
+@include bp-lg-down {
+	.text-md-center {
+		text-align: center;
+	}
+}
+@include bp-md-down {
+	.text-sm-center {
+		text-align: center;
+	}
+}
+@include bp-sm-down {
+	.text-xs-center {
+		text-align: center;
+	}
+}
+
+address {
+	font-style: normal;
+	margin-bottom: 0;
+	line-height: 26px;
+}
+
+blockquote {
+	p {
+		font-style: italic;
+	}
+}

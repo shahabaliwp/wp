@@ -1,0 +1,42 @@
+/*-------------------------------------------------------*/
+/* Pagination
+/*-------------------------------------------------------*/
+.pagination {
+	text-align: center;
+}
+
+.pagination span,
+.pagination a,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.post-page-numbers {
+	font-size: 0.9375rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--deo-border-radius);
+	width: 36px;
+	height: 36px;
+	margin: 0 2px 8px;
+	text-align: center;
+	color: var(--deo-text-color);
+	background-color: #eeeeee;
+	vertical-align: middle;
+	transition: var(--deo-transition--all);
+
+	&:not(span):hover,
+	&:not(span):focus {
+		background-color: var(--deo-primary-color);
+		color: #000;
+		text-decoration: none;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&.current {
+		background-color: var(--deo-primary-color);
+		color: #000;
+	}
+}

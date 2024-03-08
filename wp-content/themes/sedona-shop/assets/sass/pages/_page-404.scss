@@ -1,0 +1,81 @@
+/*-------------------------------------------------------*/
+/* Page 404
+/*-------------------------------------------------------*/
+.page-404 {
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.container,
+	.row {
+		position: relative;
+		height: 100%;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.36);
+	}
+
+	&__number,
+	&__title,
+	&__text {
+		color: #fff;
+	}
+
+	&__number {
+		font-family: var(--deo-heading-font);
+		line-height: 1;
+		font-size: 248px;
+		letter-spacing: 0.1em;
+
+		@include bp-lg-down {
+			font-size: 150px;
+		}
+
+		@include bp-md-down {
+			font-size: 100px;
+		}
+	}
+
+	&__title {
+		@include uppercase;
+		font-size: 56px;
+		line-height: 1.1;
+		margin-bottom: 34px;
+
+		@include bp-lg-down {
+			font-size: 34px;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+
+		a:hover,
+		a:focus {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+
+	.search-input {
+		background-color: #fff;
+		height: 55px;
+	}
+
+	.search-button {
+		height: 55px;
+		width: 55px;
+		font-size: 20px;
+	}
+}

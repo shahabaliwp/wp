@@ -1,0 +1,32 @@
+// Overlap fix
+rs-module-wrap {
+	z-index: 0;
+}
+
+rs-module {
+	overflow: visible;
+}
+
+/* Bullets
+-------------------------------------------------------*/
+.tp-bullets.custom .tp-bullet {
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 0;
+	box-shadow: none;
+	width: 36px;
+	height: 2px;
+	display: inline-block;
+	transition: var(--deo-transition--all);
+}
+
+.tp-bullets.custom .tp-bullet.selected,
+.tp-bullets.custom .tp-bullet:hover {
+	width: 46px;
+	margin-left: -10px;
+	box-shadow: none;
+	background-color: var(--deo-primary-color);
+}
+
+.hero-dot {
+	color: var(--deo-primary-color);
+}
